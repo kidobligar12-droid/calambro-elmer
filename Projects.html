@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>My Portfolio</h1>
+        <button id="menu-btn">☰</button>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>My Projects</h2>
+    <p>Here are some of the projects I have developed.</p>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Simple Calculator</h3>
+            <p>A basic calculator built using JavaScript that performs arithmetic operations.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Attendance System</h3>
+            <p>A web-based system using PHP & MySQL with admin dashboard.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal website showcasing my skills and projects.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<script src="assets/js/script.js"></script>
+
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
+
+    menuBtn.onclick = () => {
+        navLinks.classList.toggle("show");
+    };
+</script>
+
+</body>
+</html>

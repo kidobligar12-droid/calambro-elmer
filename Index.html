@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>My Portfolio</h1>
+
+        <button id="menu-btn">☰</button>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Hello, I'm a Web Developer</h2>
+    <p>I create responsive and modern websites using HTML, CSS, JavaScript, and PHP.</p>
+    <a href="projects.html" class="btn">View My Projects</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web developer currently working on my final project.
+        I enjoy building user-friendly websites and learning new technologies.
+        My goal is to become a professional full-stack developer.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+    <h2>What I Do</h2>
+    <p>✔ Frontend Development (HTML, CSS, JS)</p>
+    <p>✔ Backend Development (PHP & MySQL)</p>
+    <p>✔ Responsive Web Design</p>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
+
+    menuBtn.onclick = () => {
+        navLinks.classList.toggle("show");
+    };
+</script>
+
+</body>
+</html>

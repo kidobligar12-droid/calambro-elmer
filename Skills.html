@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .skills-container {
+            max-width: 700px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill h3 {
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .skill-fill {
+            height: 15px;
+            background: #3498db;
+            width: 0;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>My Portfolio</h1>
+        <button id="menu-btn">☰</button>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>My Skills</h2>
+    <p>Here are my technical skills and proficiency levels.</p>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Strong understanding of semantic structure and web layout.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Responsive design, Flexbox, Grid, and animations.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>DOM manipulation, events, and basic interactivity.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>PHP</h3>
+            <p>Backend development and database integration.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>MySQL</h3>
+            <p>Database design, queries, and data management.</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 70%;"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="assets/js/script.js"></script>
+
+<script>
+    // Animate skill bars on load
+    window.onload = () => {
+        const bars = document.querySelectorAll('.skill-fill');
+        bars.forEach(bar => {
+            let width = bar.style.width;
+            bar.style.width = "0";
+            setTimeout(() => {
+                bar.style.width = width;
+            }, 200);
+        });
+    };
+</script>
+
+</body>
+</html>
